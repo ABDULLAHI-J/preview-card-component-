@@ -43,7 +43,7 @@ p,span,a{
     flex-direction: column;
     padding: 1.4rem 2rem;
     padding-right: 15px;
-    gap:1.9rem;
+    gap:1rem;
     background-color: hsl(0, 0%, 100%);
 }
 
@@ -92,8 +92,8 @@ button{
     max-width: 13.938rem;
     padding:0.8rem 0.7rem;
     outline:none;
+    margin-top:2rem;
     border:none;
-    margin-top: 0.3rem;
     border-radius: 7px;
     background-color: hsl(158, 36%, 37%);
     color:white;

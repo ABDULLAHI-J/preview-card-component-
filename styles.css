@@ -51,6 +51,7 @@ p,span,a{
     text-transform: uppercase;
     color:hsl(228, 12%, 48%);
     letter-spacing: 4px;
+    font-size: 11px;
 }
 
 .title{

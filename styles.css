@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,700&display=swap');
+*,*::after,*::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:  hsl(30, 38%, 92%);
+    font-size: 14px;
+}
+
+p,span,a{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-card{
+    padding:0 30px;
+}
+
+.card{
+    display: inline-flex;
+    max-width:36.875rem;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    overflow: hidden;
+    border-radius:10px;
+}
+
+.product-img img{
+    max-width: 100%;
+    display: inherit;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    padding: 1.4rem 2rem;
+    padding-right: 15px;
+    gap:1.9rem;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.product-name{
+    text-transform: uppercase;
+    color:hsl(228, 12%, 48%);
+    letter-spacing: 4px;
+}
+
+.title{
+    font-weight: 700;
+}
+
+p{
+    color:hsl(228, 12%, 48%);
+    font-size: 0.875rem;
+    line-height: 25px;
+}
+
+.price-section,.price,.title{
+    font-family: 'Fraunces', serif;
+}
+
+.price-section{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+}
+
+.price{
+    font-size: 2.1rem;
+    font-weight: bold;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+}
+
+.price-before{
+    text-decoration: line-through;
+    text-align: center;
+    color:hsl(228, 12%, 48%);
+}
+
+
+button{
+    max-width: 13.938rem;
+    padding:0.8rem 0.7rem;
+    outline:none;
+    border:none;
+    margin-top: 0.3rem;
+    border-radius: 7px;
+    background-color: hsl(158, 36%, 37%);
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+button a{
+    display: inline-block;
+    color:white;
+    text-decoration: none;
+}
+
+button:hover{
+    background-color:  hsl(158, 36%, 23%);
+}
+
+.Add-to-cart-icon{
+    display: inline-block;
+    width: 0.875rem;
+    height:0.875rem;
+    text-align: center;
+    margin-right:15px;
+}
+
+@media(max-width:728px){
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product-img img{
+        max-height: 350px;
+        object-fit: cover;
+        width:100%;
+    }
+    .description{
+        gap: 1rem;
+    }
+}
